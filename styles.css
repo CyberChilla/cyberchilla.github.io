@@ -99,6 +99,75 @@ main {
   font-size: 1.3rem;
 }
 
+.featured-service {
+  background: white;
+  padding: 3rem;
+  margin-bottom: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.service-showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.service-card-custom {
+  background: #f8f9fa;
+  border-radius: 15px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  border: 1px solid #e9ecef;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card-custom:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+}
+
+.service-info {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #667eea;
+}
+
+.service-info h3 {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.service-info p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.gallery-image {
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-image:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+}
+
 .about-section, .contact-section {
   background: white;
   padding: 3rem;
@@ -157,5 +226,25 @@ footer {
 
   .hero p {
     font-size: 1rem;
+  }
+
+  .service-showcase {
+    gap: 1.5rem;
+  }
+
+  .featured-service {
+    padding: 2rem;
+  }
+
+  .service-card-custom {
+    padding: 1.5rem;
+  }
+
+  .gallery-image {
+    max-height: 350px;
+  }
+
+  .service-info h3 {
+    font-size: 1.6rem;
   }
 }
